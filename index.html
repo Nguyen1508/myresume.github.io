@@ -1,62 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>My Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <title>CV - Trần Mỹ Nguyên</title>
+    <style>
+        body {
+            display: flex;
+            font-family: 'K2D', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #1f5ca9;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        .container {
+            max-width: 800px;
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            transform: translateY(20px);
+            transition: transform 1s ease-in-out;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .contact-info li a {
+            text-decoration: none;
+            color: #1f5ca9;
+            transition: color 0.3s;
+        }
+        .contact-info li a:hover {
+            color: #ff6600;
+        }
+        .img_information {
+            display: flex;
+            align-items: center; 
+            justify-content: center;
+            gap: 50px; 
+        }
+        .img_person {
+            width: 150px; 
+            height: 150px;
+            border-radius: 50%; 
+            object-fit: cover;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .ifram_scratch {
+            display: flex;
+            text-align: center;
+            margin-top: 15px;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: nowrap; 
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <img id="logo" src="https://upload.wikimedia.org/wikipedia/vi/thumb/6/6c/Logo_Dai_hoc_Can_Tho.svg/2048px-Logo_Dai_hoc_Can_Tho.svg.png" alt="">
-        <h1>My Resume</h1>
-        <nav>
-            <ul>
-                <li><a href="#summary">TÓM TẮT</a></li>
-                <li><a href="#education">HỌC VẤN</a></li>
-                <li><a href="#experience">KINH NGHIỆM</a></li>
-                <li><a href="#contect">LIÊN HỆ</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <form action="">
-            <section class="name">
-                <img src="anh.jpg" alt="" class="img" >
-                <div class="text">
-                    <h1>TRẦN MỸ NGUYÊN</h1>
-                    <h2>B2111327</h2>
+    <div class="container">
+        <header>
+            <div class="img_information">
+                <img src="./image.png" alt="" class="img_person">
+                <div>
+                    <h1>Trần Mỹ Nguyên</h1>
+                    <p>Vị trí ứng tuyển: Giáo viên Tin học thiếu nhi</p>
                 </div>
-            </section>
-            <section id="summary">
-                <h2>Tóm tắt</h2>
-                <p>Là sinh viên ngành Sư phạm Tin học tại Đại học Cần Thơ khóa 47. Tôi đã tích lũy được nền tảng kiến thức vững chắc cùng với kinh nghiệm thực tế trong giảng dạy. Với sự nhiệt huyết và đam mê với giáo dục, tôi luôn hướng tới việc tạo ra những trải nghiệm học tập sáng tạo và hiệu quả cho học sinh.</p>
-            </section>
-            <section id="education">
-                <h2>Học vấn</h2>
-                <ul >
-                    <li> Trường Đại học Cần Thơ - Ngành Sư phạm Tin học (2021 - Hiện tại)</li>
-                    <li>Trường THPT Đầm Dơi (2018)</li>
-                    <li>Trường Đại học Cần Thơ (2021)</li>
-                </ul>
-            </section>
-            <section id="experience">
-                <h2>Kinh nghiệm</h2>
-                <h3>Gia sư dạy Tin học</h3>
-                <ul>
-                    <li>Hướng dẫn học sinh từ cơ bản đến nâng cao trong các chủ đề về Tin học.</li>
-                    <li>Xây dựng kế hoạch học tập cá nhân hóa, đáp ứng nhu cầu của từng học sinh.</li>
-                </ul>
-                <h3>Kiến tập tại trường THPT Đầm Dơi</h3>
-                <ul >
-                    <li>Tham gia giảng dạy và hỗ trợ giáo viên chính trong việc xây dựng bài giảng.</li>
-                    <li>Quan sát và học hỏi các phương pháp giảng dạy hiệu quả, cũng như cách quản lý lớp học.</li>
-                </ul>
-            </section>
-        </form>
-    </main>
-    <footer id="contect">
-        <p>Liên hệ: <a href="https://fb.com/100023228391268">Facebook</a></p>
-    </footer>
+            </div>
+        </header>
+        <section class="section">
+            <h2>Thông tin liên hệ</h2>
+            <ul class="contact-info">
+                <li>Email: <a href="mailto:tran08200315@gmail.com">tran08200315@gmail.com</a></li>
+                <li>Điện thoại: 0965 045 643</li>
+                <li>Địa chỉ: 3/2, Xuân Khánh, Ninh Kiều, Cần Thơ</li>
+                <li>GitHub: <a href="https://github.com/Nguyen1508">Nguyen1508</a></li>
+                <li>Scratch: <a href="https://scratch.mit.edu/users/nguyen1508/">Nguyen1508</a></li>
+            </ul>
+        </section>
+        <section class="section">
+            <h2>Học vấn</h2>
+            <p><strong>Đại học Cần Thơ</strong> - Sư phạm Tin học (2021 - 2025)</p>
+        </section>
+        <section class="section">
+            <h2>Kỹ năng</h2>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>Python, PHP</li>
+                <li>React</li>
+                <li>SQL, NoSQL</li>
+                <li>Scratch</li>
+            </ul>
+        </section>
+        <section class="section">
+            <h2>Sản phẩm</h2>
+            <p><strong>Trang web mô phỏng thuật toán</strong> - Lập trình viên (2020 - nay)</p>
+            <ul>
+                <li>Trò chơi lật thẻ mô tả thuật toán tìm kiếm tuần tự.</li>
+                <li>Giúp cho dạy học trở nên trực quan và sinh động hơn.</li>
+                <li>GitHub: <a href="https://nguyen1508.github.io/latthe/">Lật thẻ</a></li>
+            </ul>
+            <p><strong>Một số trò chơi trong Scratch</strong> - Lập trình viên (2020 - nay)</p>
+            <ul>
+                <li>Học sinh có thể vừa học vừa chơi.</li>
+                <li>Lập trình trở nên dễ dàng với Scratch.</li>
+            </ul>
+            <div class="ifram_scratch">
+                <iframe src="https://scratch.mit.edu/projects/907713030/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                <iframe src="https://scratch.mit.edu/projects/902074026/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+        </section>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.body.style.opacity = "1";
+            document.querySelector(".container").style.transform = "translateY(0)";
+        });
+    </script>
 </body>
 </html>
